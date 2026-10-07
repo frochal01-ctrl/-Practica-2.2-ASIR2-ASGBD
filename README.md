@@ -3,6 +3,7 @@
    Preparar Podman y descargar la imagen
 ```bash
 sudo apt update
+![Verificación de la instalación](images/captura)
 sudo apt install podman
 sudo podman pull container-registry.oracle.com/database/free:23.5.0.0
 sudo podman images
