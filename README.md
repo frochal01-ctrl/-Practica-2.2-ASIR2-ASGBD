@@ -7,7 +7,7 @@ sudo apt install podman
 sudo podman pull container-registry.oracle.com/database/free:23.5.0.0
 sudo podman images
 ```
-sudo apt update
+sudo apt update  
 <img src="images/Captura de pantalla de 2026-10-07 13-38-06.png" >  
 sudo apt install podman  
 <img src="images/podman.png">  
