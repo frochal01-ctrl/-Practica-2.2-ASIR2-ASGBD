@@ -13,6 +13,8 @@ sudo apt install podman
 <img src="images/podman.png">  
 sudo podman pull container-registry.oracle.com/database/free:23.5.0.0  
 <img src="images/oracle.png">  
+sudo podman images  
+
 
 
 
