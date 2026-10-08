@@ -14,7 +14,7 @@ sudo podman pull container-registry.oracle.com/database/free:23.5.0.0
 sudo podman images  
 <img src="images/pi.png">  
 
-2.Crear y comprobar el contenedor
+2.Crear y comprobar el contenedor  
 sudo podman volume create oracle_23ai_datos  
 <img src="images/ov.png">  
 sudo podman run -d --name cont-oracle -p 1521:1521 --restart=always -v oracle_23ai_datos:/opt/oracle/oradata:U container-
