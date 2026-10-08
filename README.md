@@ -26,6 +26,7 @@ sudo podman ps -a
 <img src="images/ps -a.png">  
 sudo podman logs cont-oracle
 <img src="images/logs.png">  
-
+3.Entrar en Oracle y crear el usuario de trabajo  
+sudo podman exec -it cont-oracle /bin/bash
 
 
