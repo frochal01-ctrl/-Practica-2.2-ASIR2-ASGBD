@@ -21,7 +21,7 @@ sudo podman run -d --name cont-oracle -p 1521:1521 --restart=always -v oracle_23
 registry.oracle.com/database/free:23.5.0.0  
 <img src="images/c.png">  
 sudo podman ps
-<img src="images/ps.png">  
+<img src="images/ps">  
 sudo podman ps -a  
 <img src="images/ps -a.png">  
 sudo podman logs cont-oracle
