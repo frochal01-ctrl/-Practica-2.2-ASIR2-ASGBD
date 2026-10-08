@@ -40,4 +40,5 @@ EXIT;
 ```  
 <img src="images/spl2.png">  
 sudo podman exec -it cont-oracle sqlplus orauser@//localhost:1521/FREEPDB1  
+<img src="images/funciona.png"> 
 
