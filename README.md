@@ -83,7 +83,9 @@ mariadb -u muser -p dbm
 4. Conexiones desde otra máquina
 PostgreSQL
 listen_addresses = 'IP_DE_LA_VM'
+<img src="images/listenpost.png">  
 host dbpg pguser 192.168.1.0/24 scram-sha-256
+<img src="images/funciona2.png">  
 sudo systemctl restart postgresql
 psql -h IP_DE_LA_VM -U pguser -d dbpg -W
 MariaDB
