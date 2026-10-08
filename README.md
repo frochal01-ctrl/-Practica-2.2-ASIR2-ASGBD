@@ -27,6 +27,17 @@ sudo podman ps -a
 sudo podman logs cont-oracle
 <img src="images/logs.png">  
 3.Entrar en Oracle y crear el usuario de trabajo  
-sudo podman exec -it cont-oracle /bin/bash
+sudo podman exec -it cont-oracle /bin/bash  
+<img src="images/ex.png">  
+sudo podman exec -it cont-oracle sqlplus / as sysdba  
+<img src="images/sql.png"> 
+```sql
+ALTER SESSION SET CONTAINER = FREEPDB1;
+CREATE USER orauser IDENTIFIED BY "TU_CLAVE";
+GRANT CREATE SESSION, CREATE TABLE TO orauser;
+ALTER USER orauser QUOTA 100M ON USERS;
+EXIT;
+```  
+<img src="images/sql2.png"> 
 
 
