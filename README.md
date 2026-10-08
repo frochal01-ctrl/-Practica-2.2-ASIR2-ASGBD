@@ -70,3 +70,10 @@ sudo systemctl enable --now mariadb
 sudo mariadb
 <img src="images/sudomaria.png">
 
+```sql
+CREATE DATABASE dbm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'muser'@'localhost' IDENTIFIED BY 'TU_CLAVE';
+GRANT ALL PRIVILEGES ON dbm.* TO 'muser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
