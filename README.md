@@ -1,9 +1,9 @@
 # -Practica-2.2-ASIR2-ASGBD
-## Desplegar Oracle Database 23ai Free con Podman 
+1. Desplegar Oracle Database 23ai Free con Podman 
 Configuracion de la maquina virtual
 <img src="images/vt.png">  
 <img src="images/vb.png">  
-1. Preparar Podman y descargar la imagen  
+   1.1 Preparar Podman y descargar la imagen  
    
 sudo apt update  
 <img src="images/Captura de pantalla de 2026-10-07 13-38-06.png" >  
@@ -14,7 +14,7 @@ sudo podman pull container-registry.oracle.com/database/free:23.5.0.0
 sudo podman images  
 <img src="images/pi.png">  
 
-2.Crear y comprobar el contenedor  
+   1.2 Crear y comprobar el contenedor  
 sudo podman volume create oracle_23ai_datos  
 <img src="images/ov.png">  
 sudo podman run -d --name cont-oracle -p 1521:1521 --restart=always -v oracle_23ai_datos:/opt/oracle/oradata:U container-
@@ -41,4 +41,5 @@ EXIT;
 <img src="images/spl2.png">  
 sudo podman exec -it cont-oracle sqlplus orauser@//localhost:1521/FREEPDB1  
 <img src="images/funciona.png"> 
+2. Desplegar PostgreSQL
 
