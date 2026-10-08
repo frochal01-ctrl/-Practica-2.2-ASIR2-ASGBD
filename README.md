@@ -38,6 +38,6 @@ GRANT CREATE SESSION, CREATE TABLE TO orauser;
 ALTER USER orauser QUOTA 100M ON USERS;
 EXIT;
 ```  
-<img src="images/spl2.png"> 
-
+<img src="images/spl2.png">  
+sudo podman exec -it cont-oracle sqlplus orauser@//localhost:1521/FREEPDB1  
 
