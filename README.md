@@ -38,6 +38,6 @@ GRANT CREATE SESSION, CREATE TABLE TO orauser;
 ALTER USER orauser QUOTA 100M ON USERS;
 EXIT;
 ```  
-<img src="images/sql2.png"> 
+<img src="images/spl2.png"> 
 
 
