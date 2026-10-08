@@ -85,11 +85,14 @@ PostgreSQL
 listen_addresses = 'IP_DE_LA_VM'
 <img src="images/listenpost.png">  
 host dbpg pguser 192.168.1.0/24 scram-sha-256
-<img src="images/funciona2.png">  
+<img src="images/hbapost19.png">  
 sudo systemctl restart postgresql
+<img src="images/comandospro.png">  
 psql -h IP_DE_LA_VM -U pguser -d dbpg -W
+<img src="images/mcp.png">  
 MariaDB
 bind-address = IP_DE_LA_VM
+<img src="images/bind.png">  
 
 ```sql
 CREATE USER 'muser'@'IP_DEL_CLIENTE' IDENTIFIED BY 'TU_CLAVE';
@@ -97,5 +100,8 @@ GRANT ALL PRIVILEGES ON dbm.* TO 'muser'@'IP_DEL_CLIENTE';
 FLUSH PRIVILEGES;
 EXIT;
 ```
+<img src="images/nuevouser.png">  
 sudo systemctl restart mariadb
+<img src="images/nuevouser.png"> 
 mariadb -h IP_DE_LA_VM -u muser -p dbm
+<img src="images/compeximariapng"> 
