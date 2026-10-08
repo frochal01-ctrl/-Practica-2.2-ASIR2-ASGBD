@@ -59,6 +59,9 @@ CREATE USER pguser WITH PASSWORD 'TU_CLAVE';
 GRANT ALL PRIVILEGES ON DATABASE dbpg TO pguser;
 \q
 ```
+<img src="images/q.png">  
+psql -h localhost -U pguser -d dbpg -W  
+<img src="images/funciona1.png"> 
 
 
 
