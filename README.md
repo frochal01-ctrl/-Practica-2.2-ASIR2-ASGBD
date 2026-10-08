@@ -1,6 +1,6 @@
 # -Practica-2.2-ASIR2-ASGBD
 Versiones de las base de datos  
-
+<img src="images/versiones.png"> 
 1. Desplegar Oracle Database 23ai Free con Podman 
 Configuracion de la maquina virtual
 <img src="images/vt.png">  
