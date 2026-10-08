@@ -1,6 +1,8 @@
 # -Practica-2.2-ASIR2-ASGBD
 ## Desplegar Oracle Database 23ai Free con Podman 
 Configuracion de la maquina virtual
+<img src="images/vt.png">  
+<img src="images/vb.png">  
 1. Preparar Podman y descargar la imagen  
    
 sudo apt update  
