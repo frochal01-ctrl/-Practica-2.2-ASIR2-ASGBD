@@ -53,3 +53,11 @@ sudo -i -u postgres
 psql  
 <img src="images/psql.png">  
 
+```sql
+CREATE DATABASE dbpg;
+CREATE USER pguser WITH PASSWORD 'TU_CLAVE';
+GRANT ALL PRIVILEGES ON DATABASE dbpg TO pguser;
+\q
+```
+
+
