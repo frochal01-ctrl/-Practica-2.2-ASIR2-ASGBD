@@ -15,7 +15,8 @@ sudo podman images
 <img src="images/pi.png">  
 
 2.Crear y comprobar el contenedor
-sudo podman volume create oracle_23ai_datos
+sudo podman volume create oracle_23ai_datos  
+<img src="images/ov.png">  
 
 
 
