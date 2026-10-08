@@ -77,3 +77,6 @@ GRANT ALL PRIVILEGES ON dbm.* TO 'muser'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
+<img src="images/comaria.png">  
+mariadb -u muser -p dbm  
+<img src="images/funciona2.png">  
