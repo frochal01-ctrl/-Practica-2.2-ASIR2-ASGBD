@@ -82,16 +82,16 @@ mariadb -u muser -p dbm
 <img src="images/funciona2.png">  
 4. Conexiones desde otra máquina
 PostgreSQL
-listen_addresses = 'IP_DE_LA_VM'
-<img src="images/listenpost.png">  
-host dbpg pguser 192.168.1.0/24 scram-sha-256
+listen_addresses = 'IP_DE_LA_VM'  
+<img src="images/listenpost.png">   
+host dbpg pguser 192.168.1.0/24 scram-sha-256  
 <img src="images/hbapost19.png">  
-sudo systemctl restart postgresql
-<img src="images/comandospro.png">  
-psql -h IP_DE_LA_VM -U pguser -d dbpg -W
-<img src="images/mcp.png">  
-MariaDB
-bind-address = IP_DE_LA_VM
+sudo systemctl restart postgresql  
+<img src="images/comandospro.png">   
+psql -h IP_DE_LA_VM -U pguser -d dbpg -W  
+<img src="images/mcp.png">   
+MariaDB  
+bind-address = IP_DE_LA_VM  
 <img src="images/bind.png">  
 
 ```sql
@@ -101,7 +101,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 <img src="images/nuevouser.png">  
-sudo systemctl restart mariadb
-<img src="images/nuevouser.png"> 
-mariadb -h IP_DE_LA_VM -u muser -p dbm
-<img src="images/compeximariapng"> 
+sudo systemctl restart mariadb  
+<img src="images/restarmaria.png">  
+mariadb -h IP_DE_LA_VM -u muser -p dbm  
+<img src="images/compeximariapng">  
