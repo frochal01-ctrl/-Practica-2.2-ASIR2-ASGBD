@@ -80,3 +80,20 @@ EXIT;
 <img src="images/comaria.png">  
 mariadb -u muser -p dbm  
 <img src="images/funciona2.png">  
+4. Conexiones desde otra máquina
+PostgreSQL
+listen_addresses = 'IP_DE_LA_VM'
+host dbpg pguser 192.168.1.0/24 scram-sha-256
+sudo systemctl restart postgresql
+psql -h IP_DE_LA_VM -U pguser -d dbpg -W
+MariaDB
+bind-address = IP_DE_LA_VM
+
+```sql
+CREATE USER 'muser'@'IP_DEL_CLIENTE' IDENTIFIED BY 'TU_CLAVE';
+GRANT ALL PRIVILEGES ON dbm.* TO 'muser'@'IP_DEL_CLIENTE';
+FLUSH PRIVILEGES;
+EXIT;
+```
+sudo systemctl restart mariadb
+mariadb -h IP_DE_LA_VM -u muser -p dbm
