@@ -61,7 +61,12 @@ GRANT ALL PRIVILEGES ON DATABASE dbpg TO pguser;
 ```
 <img src="images/q.png">  
 psql -h localhost -U pguser -d dbpg -W  
-<img src="images/funciona1.png"> 
-
-
+<img src="images/funciona1.png">  
+3. Desplegar MariaDB
+sudo apt install mariadb-server mariadb-client
+<img src="images/installmaria.png">  
+sudo systemctl enable --now mariadb  
+<img src="images/enablemaria.png">
+sudo mariadb
+<img src="images/sudomaria.png">
 
