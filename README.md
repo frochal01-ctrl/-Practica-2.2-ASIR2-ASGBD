@@ -41,7 +41,7 @@ EXIT;
 <img src="images/spl2.png">  
 sudo podman exec -it cont-oracle sqlplus orauser@//localhost:1521/FREEPDB1  
 <img src="images/funciona.png"> 
-2. Desplegar PostgreSQL
+2. Desplegar PostgreSQL  
 sudo apt install postgresql postgresql-contrib php-pgsql  
 <img src="images/installpost.png">  
 sudo systemctl start postgresql
