@@ -1,12 +1,7 @@
 # -Practica-2.2-ASIR2-ASGBD
-1. Desplegar Oracle Database 23ai Free con Podman
-   Preparar Podman y descargar la imagen
-```bash
-sudo apt update
-sudo apt install podman
-sudo podman pull container-registry.oracle.com/database/free:23.5.0.0
-sudo podman images
-```
+## Desplegar Oracle Database 23ai Free con Podman  
+1. Preparar Podman y descargar la imagen  
+   
 sudo apt update  
 <img src="images/Captura de pantalla de 2026-10-07 13-38-06.png" >  
 sudo apt install podman  
@@ -15,6 +10,10 @@ sudo podman pull container-registry.oracle.com/database/free:23.5.0.0
 <img src="images/oracle.png">  
 sudo podman images  
 <img src="images/pi.png">  
+
+2.Crear y comprobar el contenedor
+sudo podman volume create oracle_23ai_datos
+
 
 
 
