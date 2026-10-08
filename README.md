@@ -18,6 +18,8 @@ sudo podman images
 sudo podman volume create oracle_23ai_datos  
 <img src="images/ov.png">  
 sudo podman run -d --name cont-oracle -p 1521:1521 --restart=always -v oracle_23ai_datos:/opt/oracle/oradata:U container-
+registry.oracle.com/database/free:23.5.0.0  
+<img src="images/c.png">  
 
 
 
