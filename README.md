@@ -106,4 +106,4 @@ sudo systemctl restart mariadb
 mariadb -h IP_DE_LA_VM -u muser -p dbm  
 <img src="images/compeximariapng">  
 Oracle 23ai Free  
-<img src="images/oracle">  
+<img src="images/oracle.png">  
